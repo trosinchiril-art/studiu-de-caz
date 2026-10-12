@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studiu de caz - Git și GitHub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            color: #24292f;
+            background: #f6f8fa;
+        }
+
+        header {
+            background: #24292f;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: #d1d5db;
+        }
+
+        nav {
+            background: #0969da;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #0000000d;
+        }
+
+        h2 {
+            color: #0969da;
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            border: 1px solid #d8dee4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background: #eaeef2;
+            padding: 3px 6px;
+            border-radius: 4px;
+            overflow-wrap: anywhere;
+        }
+
+        pre {
+            background: #24292f;
+            color: #f0f6fc;
+            padding: 18px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-top: 12px;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .conclusion {
+            border-left: 5px solid #0969da;
+        }
+
+        footer {
+            background: #24292f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Git și GitHub</h1>
+        <p>Importanța aplicațiilor de lucru în echipă</p>
+        <p>Studiu de caz: Colaborarea la un proiect comun</p>
+    </header>
+
+    <nav>
+        <a href="#introducere">Introducere</a>
+        <a href="#git">Git</a>
+        <a href="#github">GitHub</a>
+        <a href="#colaborare">Colaborare</a>
+        <a href="#concluzie">Concluzie</a>
+    </nav>
+
+    <main>
+        <section id="introducere">
+            <h2>1. Introducere</h2>
+            <p>
+                În dezvoltarea software, mai multe persoane pot lucra
+                simultan la același proiect. Pentru organizarea muncii,
+                păstrarea modificărilor și evitarea pierderii codului
+                sunt utilizate instrumente precum Git și GitHub.
+            </p>
+            <p>
+                Scopul acestui studiu de caz este de a prezenta
+                importanța acestor instrumente și modul în care
+                facilitează colaborarea dintre membrii unei echipe.
+            </p>
+        </section>
+
+        <section id="git">
+            <h2>2. Ce este Git?</h2>
+            <p>
+                Git este un sistem distribuit de control al versiunilor.
+                Acesta înregistrează modificările realizate asupra
+                fișierelor și permite revenirea la versiuni anterioare.
+            </p>
+
+            <h3>Avantajele Git:</h3>
+            <ul>
+                <li>Urmărirea modificărilor din proiect.</li>
+                <li>Revenirea la versiuni anterioare.</li>
+                <li>Lucrul pe ramuri separate (branches).</li>
+                <li>Integrarea modificărilor realizate de mai mulți programatori.</li>
+                <li>Păstrarea istoricului proiectului.</li>
+            </ul>
+        </section>
+
+        <section id="github">
+            <h2>3. Ce este GitHub?</h2>
+            <p>
+                GitHub este o platformă online care găzduiește
+                repository-uri Git și oferă instrumente pentru
+                colaborare, revizuirea codului și gestionarea proiectelor.
+            </p>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>Repository</h3>
+                    <p>Locul unde sunt păstrate fișierele și istoricul proiectului.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Pull Request</h3>
+                    <p>Propunere prin care modificările pot fi analizate și integrate.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Issues</h3>
+                    <p>Instrument pentru raportarea problemelor și repartizarea sarcinilor.</p>
+                </div>
+
+                <div class="card">
+                    <h3>GitHub Pages</h3>
+                    <p>Serviciu care permite publicarea site-urilor web statice.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="colaborare">
+            <h2>4. Importanța lucrului în echipă</h2>
+            <p>
+                Git și GitHub permit membrilor unei echipe să contribuie
+                la același proiect, chiar dacă lucrează de pe calculatoare
+                diferite.
+            </p>
+
+            <ul>
+                <li>Fiecare membru poate lucra la o parte diferită a proiectului.</li>
+                <li>Modificările pot fi urmărite și verificate.</li>
+                <li>Codul poate fi păstrat într-un repository comun.</li>
+                <li>Problemele pot fi raportate și repartizate membrilor echipei.</li>
+                <li>Colaborarea este mai organizată și mai transparentă.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Comenzi Git de bază</h2>
+            <p>Exemple de comenzi utilizate pentru gestionarea proiectului:</p>
+
+            <pre><code>git init
+git add index.html
+git commit -m "Adaug pagina principala"
+git branch -M main
+git remote add origin URL_REPOSITORY
+git push -u origin main</code></pre>
+
+            <p>
+                Aceste comenzi inițializează repository-ul local,
+                pregătesc fișierul, salvează modificările și le trimit
+                către repository-ul de pe GitHub.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Exemplu practic</h2>
+            <ol>
+                <li>Se creează pagina web index.html.</li>
+                <li>Proiectul este inițializat cu Git.</li>
+                <li>Fișierul este încărcat într-un repository GitHub.</li>
+                <li>Se adaugă colegii ca colaboratori.</li>
+                <li>Pagina este publicată folosind GitHub Pages.</li>
+                <li>Linkul site-ului este distribuit echipei și profesorului.</li>
+            </ol>
+        </section>
+
+        <section id="concluzie" class="conclusion">
+            <h2>7. Concluzie</h2>
+            <p>
+                Git și GitHub sunt instrumente importante pentru
+                dezvoltarea proiectelor software în echipă. Git ajută
+                la controlul versiunilor, iar GitHub facilitează
+                colaborarea, organizarea sarcinilor și distribuirea
+                proiectelor. Utilizarea lor contribuie la un proces
+                de lucru mai eficient și mai bine organizat.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Studiu de caz: Git și GitHub</p>
+        <p>Proiect educațional realizat în HTML și CSS</p>
+    </footer>
+</body>
+</html>
